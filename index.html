@@ -6,36 +6,52 @@ and open the template in the editor.
 -->
 <html>
     <head>
-    <title> CS102</title>
+        
+    <title>Making Forms</title>
+    
     <style>
-        body{
-            background-color: lightcoral;
-            color: grey;
-            font-family: monospace;
-            text-align: center;
+        form{
+           font-family: inherit;
+           text-align: center;
+           left: 40%;
+           top: 25%;
+           position: absolute;
+           text-align: justify;
+           font-size: 100%;
            
-            
         }
-        table{
-          font-size: 160px;
-          align-content: center;
-         
-        }
-        td{ border: 1px solid darkcyan;
+        body{
+            background-color:  #006666;
         }
        
+      
     </style>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <table height="110%" width="100%"> <tr background color="white" > <h1>
-            <td>d</td><td>s</td><td>y</td></tr>
-             
-             
-            <tr><td>0</td><td>2</td><td>5</td></tr>
-                 
-                 
-            <tr><td>^</td><td>&</td><td>?</td></tr> </table> </h1>
+    <form> 
+        <div>
+        Which one is the best for your Sunday? <br> 
+        <input type="radio" name="hobby" name="Reading book" >reading book<br>
+                <input type="radio" name="hobby" name="Surfing on the net"> watching TV series and films<br>
+                <input type="radio" name="hooby" name="Chatting with friends"> chatting with friends <br>
+                <input type="radio" name="hobby" name="listening music"> listening music <br> <br>
+                    </div>       
+                  
+        First Name : <br>
+        <input type="text" name="First Name" First Name placeholder="First Name"> <br>
+        Last Name : <br>
+        <input type="text" name="Last Name" Last Name placeholder="Last Name">  <br>
+        Password :<br>
+        <input type="text" name="Password" placeholder="Student ID"> <br> <br>
+            
+              <input type="submit" value="Submit" >  <br>
+                    
+                   
+               
+    </form>
+
 </body>
 </html>
