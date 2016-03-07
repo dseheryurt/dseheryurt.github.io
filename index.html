@@ -6,79 +6,40 @@ and open the template in the editor.
 -->
 <html>
     <head>
-    <title></title>
+        <title>Dynamic Content</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
         <style>
-            
-             
-             form{
-                 text-align: center;
-                 position: absolute;
-                 top: 40%;
-                 left: 45%;
-                 
-             }
-   
-             #d1{
+            #inner{
+                text-align: center;
                 position: absolute;
-                left: 35%;
-                width: 20%;
-                height: 20%;
-                top: 45%;
-                font-size: 30px;
-                background-color:  #993300;
-                opacity: 0.5;
+                top: 30%;
+                left: 30%;
+                background-color: #00cccc;
+                
+            }
+            #outer{
+                position: relative;
+                background-color: #3399ff;
+                clear: both;
+                vertical-align: middle;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <span id="inner"> Hello </span>
       
-             }
-             #d2{
-                position: absolute;
-                left: 40%;
-                 width: 30%;
-                 height: 20%;
-              top: 50%;
-                opacity: 0.5;
-                background-color: #0066cc;
-                z-index: 100;
-             }
-             #d3{
-                 position: absolute;
-                 left: 40%;
-                 top: 50%;
-                 width: 10%;
-                 height: 40%;
-                 opacity: 0.5;
-                 background-color:  #009999;
-                 z-index: 100;
-                 
-             }
-             h2{
-                 text-align: center;
-                 position: absolute;
-                 left: 35%;
-                 top: 27%;
-                 text-decoration: #0099ff;
-             }
-             h3{ text-align: center;
-                 position: absolute;
-                 left: 35%;
-                 top: 32%;
-                 text-decoration: #66ccff;
-                 
-                 
-             }
-            
-            
-         </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<div id="d1" class="box"> </div>
-         <div id="d2" class="box">  </div>
-        <div id="d3" class="box" style="background-color: purple;">  </div> 
-        <h2> Hey there! Welcome to my Web Site. </h2>
-        <h3> to see form..</h3>
-        <form>
-        <a href="form.html" > click here </a>
-        </form>
-</body>
+        <div id="outer" > </div>
+        <script>
+             $('#inner').click;
+        $('#inner').hover(function() (
+                $(this).css("backgroung-color","green");
+                
+                ),function()
+                )
+        
+            </script>
+    </body>
 </html>
