@@ -6,123 +6,29 @@ and open the template in the editor.
 -->
 <html>
     <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <style>
-        #d1{
-            position: absolute;
-            top: 30%;
-            left: 23%;
-            height: 10%;
-            width: 10%;
-            text-align: center;
-            font-family:  fantasy;
-            color:  #0099cc;
+        <title>factorial (n)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+        <script> 
+            function factorial (num){
+        var res=1;
+        for var (var i=2; i<=num; i++){
+        res=res*i;
+            }
+            return res;
         }
-            #d2{
-            position: absolute;
-            top: 30%;
-            left: 38%;
-            height: 10%;
-            width: 10%;
-            text-align: center;
-            font-family:  fantasy;
-            color:  #cc9900;
-            }
-            #d3{
-            position: absolute;
-            top: 30%;
-            left: 53%;
-            height: 10%;
-            width: 10%;
-            text-align: center;
-            font-family:  fantasy;
-            color:  #33cc00;
-            }
-            #d4{
-            position: absolute;
-            top: 30%;
-            left: 68%;
-            height: 10%;
-            width: 10%;
-            text-align: center;
-            font-family:  fantasy;
-            color:  #009999;
-           
-        }
-        body{
-            background-color:  #ffcccc;
-            color:  #ff9999;
-            text-align: center;
-            font-family: fantasy;
-            
-            
-    </style>
-</head>
-<body>
-     <p><h1> my music based on my moods! </h1> <br> </p>
+        
     
-<div id="d1" class="box"> moody </div> 
-<div id="d2" class="box">energetic</div>
-<div id="d3" class="box">resting</div>
-<div id="d4" class="box">study</div>
-<script> 
-    $("#d1").click(
-            function(){
-                window.location = "https://www.youtube.com/watch?v=JHhV9TPNmTI"
-                
-            }
-            );
-    $("#d2").click(
-            function(){
-                window.location = "https://www.youtube.com/watch?v=OPf0YbXqDm0"
-            }
-            );
-    $("#d3").click(
-            function(){
-                window.location = "https://www.youtube.com/watch?v=T5Cp55MvX54"
-            }
-            );
-    $("#d4").click(
-            function(){
-                window.location = "https://www.youtube.com/watch?v=0lyV_eJwBuw"
-            }
-            );
-    $('#d1').hover(
-            function(){
-                $(this).css("background-color", "#ff99ff");   
-            },
-            function(){
-                 $(this).css("background-color", "#99ccff");
-            }
-            );
-    $('#d2').hover(
-            function(){
-                $(this).css("background-color", "#ff99ff");   
-            },
-            function(){
-                 $(this).css("background-color", "#ffff66");
-            }
-            );
-    $('#d3').hover(
-            function(){
-                $(this).css("background-color", "#ff99ff");   
-            },
-            function(){
-                 $(this).css("background-color", "#99ff99");
-            }
-            );
-    $('#d4').hover(
-            function(){
-                $(this).css("background-color", "#ff99ff");   
-            },
-            function(){
-                 $(this).css("background-color", "#66ffcc");
-            }
-            );
-    
+    <body>
+        
+        <div> <form>
+            <input type="text" id="num" value="6" />
+            <input type="submit" onclick="calculate();" />
+            <input type="text" id="res" placeholder="here goes the result" />
+            </form>
+        </div>
 </script>
-</body>
+</head>
+    </body>
 </html>
