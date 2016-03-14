@@ -6,29 +6,28 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>factorial (n)</title>
+        <title>calculation</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
-        <script> 
-            function factorial (num){
-        var res=1;
-        for var (var i=2; i<=num; i++){
-        res=res*i;
-            }
-            return res;
-        }
-        
-    
+    </head>
     <body>
-        
-        <div> <form>
-            <input type="text" id="num" value="6" />
-            <input type="submit" onclick="calculate();" />
-            <input type="text" id="res" placeholder="here goes the result" />
-            </form>
+        <div>
+        <form>
+            <input type="text" id="input" />
+            <select id="operator">
+                
+                <option value="+"> + </option>
+                <option value="-"> - </option>
+                <option value="*"> * </option>
+                <option value="/"> / </option>
+                
+            </select>
+            <input type="text" id="input2">
+            <input type="button" id="calc" value="calc" onclick="calculate();"/>
+                   <input type="text" id="output" >
+            
+        </form>
         </div>
-</script>
-</head>
+       
     </body>
 </html>
